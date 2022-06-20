@@ -39,7 +39,7 @@ fun usj(n1: Int, n2: Int){
 }
 
 fun stringRet(n1: String){
-    if (n1 == "$"){
+    if (n1.contains("$")){
         println("This feature contains a \$ symbol")
     }else{
         println("This feature does not contain a \$ character")
@@ -49,8 +49,8 @@ fun stringRet(n1: String){
 
 
 
-fun resNumbers(num: Int) {
-    var num = 1234
+fun resNumbers(number: Int) {
+    var num = number
     var reversed = 0
 
     while (num != 0) {
